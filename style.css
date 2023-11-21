@@ -1,5 +1,6 @@
 body{
-    margin: auto;  
+    margin: auto;
+    padding: auto;
 }
 
 body,.image-wrapper, .image-wrapper img, .text, .nav, .search input{
