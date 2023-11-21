@@ -2,35 +2,83 @@
 <html lang="fr">
 
 <head>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Découvrez Les Petits Plats, votre destination gourmande en ligne. Explorez une variété de délicieuses recettes culinaires, 
   de l'apéritif au dessert. Notre algorithme de recherche intuitif vous permet de trouver rapidement la recette parfaite pour chaque occasion. 
   Que vous soyez débutant ou chef expérimenté, Les Petits Plats vous inspire à cuisiner avec passion et créativité. 
   Rejoignez notre communauté et partagez vos propres créations culinaires. Bon appétit!">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
 
  <title>Les Petits Plats - Recettes Culinaires</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="./Image/Logo.png" alt="logo Les Petits Plats">
+        <img class="logo" src="./assets/logo/Logo.svg" alt="logo Les Petits Plats">
         <div class="image-wrapper">
-            <img src="./Image/carrot_on_the_stick_recipe.png" alt="">
+            <img class="background" src="./assets/background/lampos-aritonang-24gR_9lCdes-unsplash-1-750x565.jpg" alt="">
         </div>
         <div class="text">
-            <span>cherchez parmi plus de 1500 recettes du quotidien, simples et délicieuses</span>
+            <span>
+                cherchez parmi plus de 1500 recettes 
+                <br>du quotidien, simples et délicieuses
+            </span>
         </div>
-        <div class="nav">
+        <div class="nav-search">
             <input  aria-label="search" type="search" id="site-search" placeholder="Rechercher une recette, un ingrédient ..."/>
-            <i></i>
+            <i>
+                <img class="icone-search" src="./assets/icons/chercher.png">
+            </i>
         </div>
     </header>
+    <section class="nav-filter">
+        <div class="dropdown">
+            <div>
+                <button class="sort-select-button" aria-label="sort-select" aria-haspopup="listbox" aria-expanded="false"
+                aria-controls="sort-select-options" aria-label="Options de tri"> 
+                <span class="sort-select">Ingrédients</span><i><img class="icone-filter" src="./assets/icons/chevron-up-solid.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content container-sort-options" role="listbox" tabindex="0" aria-labelledby="sort-select-label" >
+                    <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Type to filter...">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="sort-select-button" aria-label="sort-select" aria-haspopup="listbox" aria-expanded="false"
+                aria-controls="sort-select-options" aria-label="Options de tri"> 
+                <span class="sort-select">Appareils</span><i><img class="icone-filter" src="./assets/icons/chevron-up-solid.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content container-sort-options" role="listbox" tabindex="0" aria-labelledby="sort-select-label" >
+                    <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Type to filter...">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="sort-select-button" aria-label="sort-select" aria-haspopup="listbox" aria-expanded="false"
+              aria-controls="sort-select-options" aria-label="Options de tri"> 
+                <span class="sort-select">Ustensiles</span><i><img class="icone-filter" src="./assets/icons/chevron-up-solid.svg" alt=""></i>
+                </button>
+                <div class="dropdown-content container-sort-options" role="listbox" tabindex="0" aria-labelledby="sort-select-label" >
+                    <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Type to filter...">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="template-recipes">
+        <div id="recipe-container">
+        </div>
+    </section>
     <footer>
         <p>&copy; 2023 Les Petits Plats. Tous droits réservés.</p>
-      </footer>
+    </footer>
+    <script type="module" src="scripts/template-recipes.js"></script>
 </body>
 </html>
