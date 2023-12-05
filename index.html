@@ -2,83 +2,93 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Découvrez Les Petits Plats, votre destination gourmande en ligne. Explorez une variété de délicieuses recettes culinaires, 
-  de l'apéritif au dessert. Notre algorithme de recherche intuitif vous permet de trouver rapidement la recette parfaite pour chaque occasion. 
-  Que vous soyez débutant ou chef expérimenté, Les Petits Plats vous inspire à cuisiner avec passion et créativité. 
-  Rejoignez notre communauté et partagez vos propres créations culinaires. Bon appétit!">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-
- <title>Les Petits Plats - Recettes Culinaires</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Découvrez Les Petits Plats, votre destination gourmande en ligne. Explorez une variété de délicieuses recettes culinaires, 
+    de l'apéritif au dessert. Notre algorithme de recherche intuitif vous permet de trouver rapidement la recette parfaite pour chaque occasion. 
+    Que vous soyez débutant ou chef expérimenté, Les Petits Plats vous inspire à cuisiner avec passion et créativité. 
+    Rejoignez notre communauté et partagez vos propres créations culinaires. Bon appétit!">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" onerror="handleError()">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" integrity="..." onerror="handleError()">
+    <title>Les Petits Plats - Recettes Culinaires</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./assets/logo/Logo.svg" alt="logo Les Petits Plats">
-        <div class="image-wrapper">
-            <img class="background" src="./assets/background/lampos-aritonang-24gR_9lCdes-unsplash-1-750x565.jpg" alt="">
+    <header class="masthead d-flex align-items-center justify-content-center">
+        <div class="d-flex position-absolute top-0 start-0">
+            <img class="mb-auto p-2" src="./assets/logo/Logo.png">
         </div>
-        <div class="text">
-            <span>
-                cherchez parmi plus de 1500 recettes 
-                <br>du quotidien, simples et délicieuses
-            </span>
-        </div>
-        <div class="nav-search">
-            <input  aria-label="search" type="search" id="site-search" placeholder="Rechercher une recette, un ingrédient ..."/>
-            <i>
-                <img class="icone-search" src="./assets/icons/chercher.png">
-            </i>
+        <div class="container h-100">
+          <div class="row h-100 d-flex justify-content-center align-items-center">
+            <form class="text col-12 text-center" role="search">
+                <fieldset>
+                <legend class="d-flex align-items-center justify-content-center text-center">cherchez parmi plus de 1500 recettes<br> du quotidien, simples et délicieuses</legend>
+                <div class="inner-form">
+                <div class="input-field">
+                    <div class="navbar d-flex col-12">
+                        <input class="btn btn-light" autocomplete="false" aria-label="search" type="search" id="site-search" placeholder="Rechercher par recette ou par ingrédients ..." tabindex="" aria-hidden="true" data-choice="active" value=""/>
+                        <button class="searching btn btn-dark d-flex align-items-end justify-content-end position-absolute end-0 m-2 " type="submit"></button>
+                    </div>
+                </div>
+                </div>
+                </fieldset>
+                </form>
+          </div>
         </div>
     </header>
     <section class="nav-filter">
-        <div class="dropdown">
-            <div>
-                <button class="sort-select-button" aria-label="sort-select" aria-haspopup="listbox" aria-expanded="false"
-                aria-controls="sort-select-options" aria-label="Options de tri"> 
-                <span class="sort-select">Ingrédients</span><i><img class="icone-filter" src="./assets/icons/chevron-up-solid.svg" alt=""></i>
+        <div class="dropdown align-items-start">
+            <div class="btn-group d-inline-flex gap-5 ms-4 me-4 ps-4 mt-4">
+                <button class="button-ingredients btn mr-md-2 mb-md-0 mb-2 btn-light btn-rounds btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton-ingrédients">
+                  Ingrédients
+                  <i id="chevron-ingrédients" class="bi bi-chevron-down"></i>
                 </button>
-                <div class="dropdown-content container-sort-options" role="listbox" tabindex="0" aria-labelledby="sort-select-label" >
-                    <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Type to filter...">
-                    <ul>
-                        <li></li>
+                <form class="dropdown-menu">
+                    <input id="search-ingredients" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
+                    <ul class="dropdown-menu-ingredients">
                     </ul>
-                </div>
-            </div>
-            <div>
-                <button class="sort-select-button" aria-label="sort-select" aria-haspopup="listbox" aria-expanded="false"
-                aria-controls="sort-select-options" aria-label="Options de tri"> 
-                <span class="sort-select">Appareils</span><i><img class="icone-filter" src="./assets/icons/chevron-up-solid.svg" alt=""></i>
+                </form>
+                <button class="button-appliances btn mr-md-2 mb-md-0 mb-2 btn-light btn-round btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton-appliances">
+                    Appareils
+                    <i id="chevron-appliances" class="bi bi-chevron-down"></i>
                 </button>
-                <div class="dropdown-content container-sort-options" role="listbox" tabindex="0" aria-labelledby="sort-select-label" >
-                    <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Type to filter...">
-                    <ul>
-                        <li></li>
+                <form class="dropdown-menu">
+                    <input id="search-appliances" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
+                    <ul class="dropdown-menu-appliances">
                     </ul>
-                </div>
-            </div>
-            <div>
-                <button class="sort-select-button" aria-label="sort-select" aria-haspopup="listbox" aria-expanded="false"
-              aria-controls="sort-select-options" aria-label="Options de tri"> 
-                <span class="sort-select">Ustensiles</span><i><img class="icone-filter" src="./assets/icons/chevron-up-solid.svg" alt=""></i>
-                </button>
-                <div class="dropdown-content container-sort-options" role="listbox" tabindex="0" aria-labelledby="sort-select-label" >
-                    <input type="search" class="form-control bg-dark" autocomplete="false" placeholder="Type to filter...">
-                    <ul>
-                        <li></li>
+                </form>
+                <button class="button-utensils btn mr-md-2 mb-md-0 mb-2 btn-light btn-round btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton-ustensils">
+                    Ustensiles
+                    <i id="chevron-ustensils" class="bi bi-chevron-down"></i>
+                 </button>
+                 <form class="dropdown-menu">
+                     <input id="search-ustensils" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
+                     <ul class="dropdown-menu-ustensils">
                     </ul>
-                </div>
+                 </form>
             </div>
         </div>
+        <div class="d-flex flex-row justify-content-start align-items-start">
+            <div class="btn-group d-inline-flex gap-5 ms-4 me-4 ps-4 mt-4">
+            <ul class="active-ingredients m-2">
+            </ul>
+            <ul class="active-appliances m-2">
+            </ul>
+            <ul class="active-ustensils m-2">
+            </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end align-items-center"><span class="number"></span></div>
     </section>
-    <section class="template-recipes">
-        <div id="recipe-container">
+    <section class="template-recipes container">
+        <div id="recipe-container" class="row">
         </div>
     </section>
-    <footer>
-        <p>&copy; 2023 Les Petits Plats. Tous droits réservés.</p>
-    </footer>
-    <script type="module" src="scripts/template-recipes.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" onerror="handleError()"></script>
+    <script>
+        function handleError() { console.error('Erreur de chargement de la ressource.'); }
+     </script>
 </body>
+
 </html>
