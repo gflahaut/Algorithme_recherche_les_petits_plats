@@ -61,7 +61,7 @@ const recipes = [
                 "quantity" : 5
             },
             {
-                "ingredient" : "Lait de Coco",
+                "ingredient" : "Lait de coco",
                 "quantity" : 100,
                 "unit" : "ml"
             }
@@ -172,7 +172,7 @@ const recipes = [
                "unit": "cuillères à soupe"
            },
            {
-               "ingredient": "gruyère râpé",
+               "ingredient": "Gruyère râpé",
                "quantity": 100,
                "unit": "grammes"
            },
@@ -291,7 +291,7 @@ const recipes = [
                "unit": "grammes"
            },
            {
-                "ingredient": "farine",
+                "ingredient": "Farine",
                 "quantity": 90,
                 "unit": "grammes"
            }
@@ -467,7 +467,7 @@ const recipes = [
                 "unit":"cuillère à soupe"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "Huile d'olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -585,7 +585,7 @@ const recipes = [
                 "unit":"tiges"
             },
             {
-                "ingredient": "huile d'olives",
+                "ingredient": "Huile d'olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -715,7 +715,7 @@ const recipes = [
                 "unit":"grammes"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "Huile d'olive",
                 "quantity": 1,
                 "unit": "cuillères à soupe"
             }
@@ -934,7 +934,7 @@ const recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'olives"
+                "ingredient": "Huile d'olive"
             },
             {
                 "ingredient": "Oignon",
@@ -1318,7 +1318,7 @@ const recipes = [
                 "unit": "grammes"
             },
             {
-                "ingredient": "Huile d'olives",
+                "ingredient": "Huile d'olive",
                 "quantity": 25,
                 "unit": "cl"
             },
@@ -1341,7 +1341,7 @@ const recipes = [
         "time": 60,
         "description":"Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'huile d'olive. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage râpé",
         "appliance": "Four",
-        "ustensils":["couteau", "cuillère en bois", "Poêle à frire"]
+        "ustensils":["Couteau", "Cuillère en bois", "Poêle à frire"]
     },
     {
         "id": 38,
@@ -1434,7 +1434,7 @@ const recipes = [
         "time": 10,
         "description":"Dans un saladier mettre l'eau, le jus des citrons et le sucre. Bien mélanger. Ajouter le bicarbonate. Servir. Ajouter des glaçon et une feuille de menthe pour la déco.",
         "appliance": "Saladier",
-        "ustensils":["cuillère en bois"]
+        "ustensils":["Cuillère en bois"]
     },
     {
         "id": 41,
@@ -1553,7 +1553,7 @@ const recipes = [
                 "unit":"grammes"
             },
             {
-                "ingredient": "farine",
+                "ingredient": "Farine",
                 "quantity": 40,
                 "unit": "grammes"
             }
@@ -1561,7 +1561,7 @@ const recipes = [
         "time": 15,
         "description":"Mélanger la farine et le beurre fondu en ajoutant le lait peu à peu. Ajouter du sucre après la cuisson. Bien mélanger. Ajouter le chocolat en morceaux et laisser chauffer 8 minutes en mélangeant avec une cuillère en bois. Mettre dans des verres",
         "appliance": "Casserole",
-        "ustensils":["cuillère en bois"]
+        "ustensils":["Cuillère en bois"]
     },
     {
         "id": 45,
@@ -1753,7 +1753,7 @@ const recipes = [
                 "quantity": 6
             },
             {
-                "ingredient": "Poudre d'amendes",
+                "ingredient": "Poudre d'amandes",
                 "quantity": 500,
                 "unit": "grammes"
             },
