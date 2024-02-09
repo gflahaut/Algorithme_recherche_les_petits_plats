@@ -17,6 +17,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
 }
+
 .searching{
     background-image: url('../assets/icons/Loop_CTA.png');
     background-size: cover;
@@ -119,9 +120,11 @@ ul, li{
 }
 
 .highlight {
-    font-weight: bold;
-    color:white;
-    background-color: red;
+    font-weight: bolder;
+    font-size: larger;
+    color:black;
+    background-image: linear-gradient(to right, #e4f221cc, #FFD15B, #F27121cc);
+    border-radius: 6px;
 }
 
 ul.dropdown-menu-ustensils, ul.dropdown-menu-appliances, ul.dropdown-menu-ingredients{
