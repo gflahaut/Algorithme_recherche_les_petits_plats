@@ -44,7 +44,7 @@ body{
     align-items: center;
     position: absolute;
     margin: auto;
-    padding: 23em;
+    padding: 2em;
 }
 
 .text legend{
@@ -163,3 +163,7 @@ ul.dropdown-menu-ustensils > li > *, ul.dropdown-menu-appliances > li > *, ul.dr
 #nav-search{
     width: 955px;
 }
+
+/* .show{
+    display: block;
+} */
