@@ -139,9 +139,8 @@ function initializePage() {
                     for (let i = 0; i < activeArray.length; i++) {
                         newArray.push(activeArray[i]);
                         activeArray.splice(index, 1);
-                        console.log("Active Array after removal splice:", activeArray, "newArray after removal splice:",newArray);
-                        filterRecipesByAll();
                     }
+                    filterRecipesByAll();
                 }
             }
 
@@ -198,7 +197,6 @@ function initializePage() {
     
         ingredientContainer.innerHTML = '';
         ingredientContainer.innerHTML = ingredientsHTML;
-        console.log('here');
     
         let appliancesSet = new Set();
         for (let recipe of recipes) {
@@ -367,10 +365,7 @@ function initializePage() {
     recipes.forEach((recipe) => renderRecipe(recipe, []));
 
     function filterRecipesByAll() {
-        console.log("FILTERING RECIPES");
         recipeContainer.innerHTML = "";
-        console.log(activeIngredients);
-        console.log(searchTerm);
         const allFiltersEmpty = searchTerm.trim() === '' && activeIngredients.length === 0 && activeAppliances.length === 0 && activeUstensils.length === 0;
         const filteredRecipes = [];
         for (let i = 0; i < recipes.length; i++) {
@@ -448,10 +443,7 @@ function initializePage() {
                 }
             }
         }
-    
-        console.log(filteredRecipes);
         const elementsToHighlight = [searchTerm, ...activeIngredients, ...activeAppliances, ...activeUstensils];
-        console.log(elementsToHighlight);
     
         if (allFiltersEmpty) {
             recipes.forEach((recipe) => renderRecipe(recipe, []));

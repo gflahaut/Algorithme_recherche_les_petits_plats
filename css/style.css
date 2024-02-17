@@ -44,7 +44,7 @@ body{
     align-items: center;
     position: absolute;
     margin: auto;
-    padding: 23em;
+    padding: 2em;
 }
 
 .text legend{
@@ -158,6 +158,10 @@ ul.dropdown-menu-ustensils > li > *, ul.dropdown-menu-appliances > li > *, ul.dr
 }
 #site-search:focus + button{
     background-image: url('../assets/icons/Loop_CTA_Yellow.png');
+}
+
+#site-search::-webkit-search-cancel-button{
+    cursor: pointer;
 }
 
 #nav-search{
