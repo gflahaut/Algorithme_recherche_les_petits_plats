@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -38,15 +37,14 @@
     </header>
     <section class="nav-filter">
         <div class="dropdown align-items-start">
-            <div class="btn-group d-inline-flex gap-5 ms-4 me-4 ps-4 mt-4">
+            <div class="btn-group d-flex gap-5 ms-4 me-4 ps-4 mt-4 w-50">
                 <button class="button-ingredients btn mr-md-2 mb-md-0 mb-2 btn-light btn-rounds btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton-ingredients">
-                  Ingrédients
-                  <i id="chevron-ingredients" class="bi bi-chevron-down"></i>
+                    Ingrédients
+                    <i id="chevron-ingredients" class="bi bi-chevron-down"></i>
                 </button>
                 <form class="dropdown-menu">
                     <input id="search-ingredients" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
-                    <ul class="dropdown-menu-ingredients">
-                    </ul>
+                    <ul class="dropdown-menu-ingredients"></ul>
                 </form>
                 <button class="button-appliances btn mr-md-2 mb-md-0 mb-2 btn-light btn-round btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton-appliances">
                     Appareils
@@ -54,28 +52,21 @@
                 </button>
                 <form class="dropdown-menu">
                     <input id="search-appliances" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
-                    <ul class="dropdown-menu-appliances">
-                    </ul>
+                    <ul class="dropdown-menu-appliances"></ul>
                 </form>
                 <button class="button-utensils btn mr-md-2 mb-md-0 mb-2 btn-light btn-round btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButton-ustensils">
                     Ustensiles
                     <i id="chevron-ustensils" class="bi bi-chevron-down"></i>
-                 </button>
-                 <form class="dropdown-menu">
-                     <input id="search-ustensils" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
-                     <ul class="dropdown-menu-ustensils">
-                    </ul>
-                 </form>
+                </button>
+                <form class="dropdown-menu">
+                    <input id="search-ustensils" type="search" class="form-control bg-white" autocomplete="false" placeholder="Type to filter...">
+                    <ul class="dropdown-menu-ustensils"></ul>
+                </form>
             </div>
-        </div>
-        <div class="d-flex align-items-start text-center">
-            <div class="btn-group d-inline-flex gap-5 ms-4 me-4 ps-4 mt-4">
-            <ul class="active-ingredients m-2">
-            </ul>
-            <ul class="active-appliances m-2">
-            </ul>
-            <ul class="active-ustensils m-2">
-            </ul>
+            <div class="btn-group d-flex gap-5 ms-4 me-4 ps-4 mt-4 w-50">
+                <ul class="active-ingredients"></ul>
+                <ul class="active-appliances"></ul>
+                <ul class="active-ustensils"></ul>
             </div>
         </div>
         <div class="d-flex justify-content-end align-items-center"><span class="number"></span></div>

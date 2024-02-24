@@ -167,3 +167,11 @@ ul.dropdown-menu-ustensils > li > *, ul.dropdown-menu-appliances > li > *, ul.dr
 #nav-search{
     width: 955px;
 }
+
+.active-ingredients, .active-appliances, .active-ustensils {
+    width: 150px;
+}
+
+.w-50{
+    width: 50vw;
+}

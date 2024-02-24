@@ -521,7 +521,7 @@ const recipes = [
     {
         "id": 15,
         "image": "Recette15.jpg",
-        "name": "Crêpes Chocolat Banane",
+        "name": "Crêpes Chocolat Bananes",
         "servings": 10,
         "ingredients": [
             {
@@ -549,7 +549,7 @@ const recipes = [
                 "unit": "grammes"
             },
             {
-                "ingredient": "Banane",
+                "ingredient": "Bananes",
                 "quantity": 4
             }
         ],
@@ -657,7 +657,7 @@ const recipes = [
     {
         "id": 19,
         "image": "Recette19.jpg",
-        "name": "Shake Banane Kiwi",
+        "name": "Shake Bananes Kiwi",
         "servings": 4,
         "ingredients": [
             {
@@ -679,7 +679,7 @@ const recipes = [
                 "unit":"grammes"
             },
             {
-                "ingredient": "Banane",
+                "ingredient": "Bananes",
                 "quantity": 1
             }
         ],
